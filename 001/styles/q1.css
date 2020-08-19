@@ -1,0 +1,14 @@
+.main{
+    width: 60%;
+    order: 2;
+}
+
+.title{
+    width: 40%;
+    order: 1;
+}
+
+.ul,li{
+    width: 100%;
+    order: 3;
+}
