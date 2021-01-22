@@ -1,0 +1,25 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+h1 {
+    color: #ddd;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+code {
+    color: #fff;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.code {
+    background: #000;
+    border: 4px solid #ddd;
+    width: 50%;
+}
