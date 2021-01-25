@@ -1,0 +1,41 @@
+* {
+    background-color: rgb(252, 252, 163);
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    color: #000;
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+#count {
+    color: #fff;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin: 0 auto;
+}
