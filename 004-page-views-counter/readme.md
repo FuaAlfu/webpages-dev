@@ -5,7 +5,7 @@ Count API homepage, its a free api key websight
 [https://countapi.xyz/]
 
 then create your api key: "you will find these links - at create section"
-
+(https://github.com/FuaAlfu/webpages-dev/blob/master/004-page-views-counter/public/img/api-count.png)
 
 after adding your namespace key and value,.. your link should look like this link down below
 https://api.countapi.xyz/create?namespace=f-a&key=jo-jo&value=0
