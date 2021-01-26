@@ -1,0 +1,97 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1a508b;
+}
+
+nav {
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem 1rem; */
+    background: #fff;
+}
+
+a {
+    color: #000;
+    background: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    background: #fff;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-family: "lobster", cursive;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+li {
+    padding-left: 10rem;
+    position: relative;
+    background: #fff;
+}
+
+p {
+    color: #000;
+    background: #fff;
+    /* font-size: 16px; */
+    font-weight: bold;
+    text-shadow: 5px 8px #ddd;
+}
+
+hr {
+    margin-top: 45px;
+    padding: 16px;
+    border-color: grey;
+    border-width: 5px;
+    width: 10%;
+    /* or use */
+    border-style: none;
+    border-top-style: dotted;
+}
+
+.nav-links:hover {
+    border-bottom: 4px solid #000;
+    transition: all 0.2s ease-out;
+}
+
+.container {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 5px 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+/* #hidden-text {
+    display: none;
+    background: #fff;
+} */
+
+.box:hover {
+    height: 200px;
+    width: 200px;
+    font-size: 16px;
+}
