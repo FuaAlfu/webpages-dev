@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>title</h1>
+        <hr />
+
+        <h4>hi everyone</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ab autem temporibus, saepe iste molestias similique facere unde distinctio fugiat optio a dicta corrupti aperiam quidem repellendus, voluptate vel sequi.</p>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa tempore libero, reiciendis quis aliquid commodi neque repudiandae quaerat quisquam quia! Distinctio voluptatibus ducimus nobis veniam mollitia ratione vero voluptate quod!</p>
+        </div>
+
+        <h2>follow up</h2>
+        <form action="">
+            <label for="case1">case one</label>
+            <input id="case1" type="checkbox">
+            <label for="case2">case two</label>
+            <input id="case1" type="checkbox">
+        </form>
+        <hr />
+
+        <!-- here ..! -->
+        <div role="checkbox" aria-checked="true" tabindex="0" aria-labelledby="plan1">plan one</div>
+        <label id="plan1"> plan one label</label>
+        <div role="checkbox" aria-checked="false" tabindex="0">plan two</div>
+        <div role="checkbox" aria-checked="mixed" tabindex="0">plan three</div>
+    </div>
+</body>
+
+</html>
