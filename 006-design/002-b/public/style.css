@@ -84,6 +84,15 @@ hr {
     cursor: pointer;
 }
 
+.box-rot {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 5px 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
 
 /* #hidden-text {
     display: none;
@@ -94,4 +103,35 @@ hr {
     height: 200px;
     width: 200px;
     font-size: 16px;
+}
+
+.box-rot:hover {
+    outline: 5px solid #dbc1ac;
+    /* 32px */
+    outline-offset: 0.8rem;
+    transform: scale(0.9) rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
+
+
+/*  */
+
+.bottom {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    height: 80%;
+    width: 90%;
+    margin-top: 60px;
+    margin-left: 60px;
+    padding: 25px 25px;
+}
+
+.bottom-p {
+    color: #000;
+    background: #fff;
+    font-size: 30px;
+    font-weight: lighter;
 }
