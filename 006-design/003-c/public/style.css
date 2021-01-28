@@ -57,6 +57,16 @@ img {
     text-align: center;
 }
 
+.txt-2 {
+    text-align: center;
+    background: var(--mainWhite);
+    border: 1px solid var(--mainWhite);
+    border-radius: 8px;
+    width: 100%;
+    height: 6vh;
+    font-size: 2rem;
+}
+
 .date {
     color: var(--mainWhite);
     margin-top: 8px;
