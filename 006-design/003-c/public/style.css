@@ -1,0 +1,87 @@
+:root {
+    --mainPink: #ff577f;
+    --mainWhite: #fff;
+    --mainBlack: #000;
+    --mainOrange: #ff884b;
+    --mainYellow: #ffc764;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background: var(--mainPink);
+}
+
+h1 {
+    color: var(--mainWhite);
+    font: 1px outline;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+p {
+    color: var(--mainBlack);
+    font-size: 1rem;
+    font-weight: lighter;
+    text-shadow: 2px 2px var(--mainOrange);
+    margin-top: 8px;
+}
+
+img {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    padding: 25px;
+    margin: 15px 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    min-height: 10rem;
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.txt-1 {
+    text-align: center;
+}
+
+.date {
+    color: var(--mainWhite);
+    margin-top: 8px;
+    text-align: center;
+}
+
+.img-pos {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.img {
+    /* position: absolute; */
+    transition: all 2s ease;
+    opacity: 0.9;
+}
+
+.img:hover {
+    outline: 5px solid var(--mainYellow);
+    /* 32px */
+    outline-offset: 0.8rem;
+    transform: scale(1.3) rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
