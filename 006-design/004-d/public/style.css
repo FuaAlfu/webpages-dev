@@ -1,0 +1,58 @@
+:root {
+    --mainGray: #ddd;
+    --mainBlack: #000;
+    --mainWhite: #fff;
+    --mainYellow: #ffc764;
+    --mainPink: #ff577f;
+}
+
+* {
+    background: var(--mainGray);
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div {
+    text-align: center;
+    color: var(--mainBlack);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid var(--mainBlack);
+    border-radius: 8px;
+    background: var(--mainWhite);
+}
+
+.box-2 {
+    height: 100px;
+    width: 100px;
+    border: 1px solid var(--mainBlack);
+    border-radius: 8px;
+    background: var(--mainPink);
+}
+
+.box:hover {
+    outline: 5px solid var(--mainYellow);
+    /* 32px */
+    outline-offset: 0.8rem;
+    transform: scale(0.9) rotate(45deg);
+}
+
+.box-2:hover {
+    outline: 5px solid var(--mainPink);
+    /* 32px */
+    outline-offset: 0.6rem;
+    transform: scale(0.9) rotate(90deg);
+}
