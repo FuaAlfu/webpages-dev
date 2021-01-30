@@ -1,0 +1,70 @@
+:root {
+    --mainGray: #ddd;
+    --mainWhite: #fff;
+    --mainHeader: #2c061f;
+}
+
+* {
+    background: #351f39;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+    text-decoration: none;
+    text-shadow: 3px 6px var(--mainGray);
+    background: var(--mainWhite);
+    color: var(--mainHeader);
+}
+
+p {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px var(--mainGray);
+    background: var(--mainWhite);
+    color: var(--mainHeader);
+}
+
+.header {
+    border: 1px solid var(--mainWhite);
+    border-radius: 8px;
+    background: var(--mainWhite);
+    cursor: pointer;
+}
+
+.main {
+    border: 1px solid var(--mainWhite);
+    border-radius: 8px;
+    background: var(--mainWhite);
+    padding-top: 60px;
+    margin-top: 80px;
+}
+
+.foot {
+    padding-top: 30px;
+    margin-top: 40px;
+}
+
+
+/* .date {
+    color: var(--mainWhite);
+    text-align: center;
+    font-size: 8px;
+    background: var(--mainHeader);
+} */
+
+.txt-1 {
+    text-align: center;
+    background: var(--mainWhite);
+    border: 1px solid var(--mainWhite);
+    border-radius: 8px;
+    width: 100%;
+    height: 6vh;
+    font-size: 1rem;
+}
