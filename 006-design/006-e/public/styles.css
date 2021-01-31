@@ -1,0 +1,53 @@
+:root {
+    --clr-mainWhite: #fff;
+    --clr-mainBlack: #000;
+    --clr-mainGray: #ddd;
+    --clr-mainMilky: #f6f5f5;
+}
+
+* {
+    background: var(--clr-mainMilky);
+}
+
+body {
+    font-family: 'Yatra One', cursive, sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+}
+
+.img-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    max-height: 30%;
+    border: 1px solid var(--clr-mainGray);
+    background: var(--clr-mainWhite);
+}
+
+.img-1 {
+    padding: 8px 4px;
+    margin: auto 0;
+    cursor: pointer;
+    background: var(--clr-mainWhite);
+}
+
+.img-card {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    background: var(--clr-mainWhite);
+}
+
+.date {
+    margin-top: 25px;
+    text-align: center;
+}
