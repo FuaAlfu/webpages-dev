@@ -1,0 +1,65 @@
+:root {
+    --clr-mainWhite: #fff;
+    --clr-mainBlack: #000;
+    --clr-mainGray: #ddd;
+    --clr-mainMilky: #f6f5f5;
+    --clr-mainHeader: #2c061f;
+    --clr-mainYellow: #ffc764;
+    --clr-mainPink: #ff577f;
+    --clr-mainCool: #ffb26b;
+}
+
+* {
+    background: var(--clr-mainCool);
+}
+
+body {
+    font-family: 'Yatra One', cursive, sans-serif;
+}
+
+header {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+hr {
+    margin-top: 4px;
+    padding: 2px;
+    border-color: var(--clr-mainHeader);
+    border-width: 2px;
+    width: 20%;
+    /* or use */
+    border-style: none;
+    border-top-style: dotted;
+}
+
+.main-txt p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 10%;
+    max-height: 30%;
+    border: 1px solid var(--clr-mainYellow);
+    border-radius: 8px;
+    background: var(--clr-mainYellow);
+}
+
+.cart {
+    border: 1px solid var(--clr-mainHeader);
+    border-radius: 8px;
+    background: var(--clr-mainCool);
+    cursor: pointer;
+}
+
+.date {
+    margin-top: 15px;
+    text-align: center;
+}
