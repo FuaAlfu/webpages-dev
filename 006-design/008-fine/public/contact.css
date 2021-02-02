@@ -1,0 +1,14 @@
+:root {
+    --clr-mainWhite: #fff;
+    --clr-mainBlack: #000;
+    --clr-mainGray: #ddd;
+    --clr-mainMilky: #f6f5f5;
+    --clr-mainHeader: #2c061f;
+    --clr-mainYellow: #ffc764;
+    --clr-mainPink: #ff577f;
+    --clr-mainCool: #ffb26b;
+}
+
+* {
+    background: var(--clr-mainMilky);
+}
