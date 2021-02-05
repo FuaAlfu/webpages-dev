@@ -1,6 +1,6 @@
 
 ## Breaking Bad api
-create a somple api app
+create a simple api app
 ```
 https://breakingbadapi.com/Documentation
 ```

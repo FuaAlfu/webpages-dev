@@ -1,0 +1,57 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breed {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+}
+
+.breed img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    font-size: 22px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.button:focus {
+    outline: none;
+}
