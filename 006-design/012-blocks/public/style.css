@@ -11,6 +11,12 @@ h1 {
     text-align: center;
 }
 
+p {
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+}
+
 span {
     /* display: inline; */
     /* display: block; */
@@ -22,4 +28,12 @@ span {
     /* padding: 0 10px; */
     border: 1px solid #000;
     text-align: center;
+}
+
+.one {
+    text-shadow: #322332 0 -2px;
+}
+
+.dots {
+    padding: 2px 2px;
 }
