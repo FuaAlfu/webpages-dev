@@ -1,0 +1,25 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: line-through;
+    color: #000;
+    text-shadow: 2px 4px 8px #ddd;
+    text-align: center;
+}
+
+span {
+    /* display: inline; */
+    /* display: block; */
+    display: inline-block;
+    background-color: #EEE;
+    width: 200px;
+    margin: 20px;
+    padding: 30px;
+    /* padding: 0 10px; */
+    border: 1px solid #000;
+    text-align: center;
+}
