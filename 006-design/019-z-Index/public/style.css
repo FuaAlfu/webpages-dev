@@ -1,0 +1,32 @@
+body {
+    display: block;
+    margin: 8px;
+}
+
+div {
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+    color: #fff;
+}
+
+.a {
+    background: red;
+    left: 20px;
+    top: 20px;
+    /* z-index work only with position */
+    z-index: 3;
+}
+
+.b {
+    background: blue;
+    left: 15px;
+    top: 15px;
+    /*z-index work only with position */
+    z-index: 2;
+}
+
+.c {
+    background: gold;
+}
