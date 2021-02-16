@@ -1,0 +1,42 @@
+body {
+    background: #232222;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+    border: 1px solid #ffe227;
+    border-radius: 4px;
+    height: 60px;
+    width: 60px;
+    /* margin-bottom: 8px; */
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.card {
+    padding: 4px 8px;
+    margin: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+a:hover {
+    cursor: pointer;
+    background: #ffe227;
+}
