@@ -1,0 +1,25 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    /* list-style-type: georgian; */
+    /* outside or inside */
+    /* list-style-position: inside; */
+    /* using short hand */
+    /* list-style: armenian inside; */
+    list-style: none;
+}
+
+li {
+    background: #ccc;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 100vh;
+    width: 100%;
+}
