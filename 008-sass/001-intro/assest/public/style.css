@@ -1,27 +1,18 @@
 header {
-    background: lightblue;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: nowrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  background: lightblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header button {
-    background: red;
+  background: red;
 }
 
 .contact button {
-    background: red;
+  background: red;
 }
-
-.btn {
-    display: inline-block;
-    margin: 4px;
-    padding: 8px;
-}
-
-
 /*# sourceMappingURL=style.css.map */
