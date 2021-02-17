@@ -1,3 +1,7 @@
+/*
+still working on with our lovely navs
+*/
+
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -47,8 +51,27 @@ p {
     margin-left: 24px;
 }
 
-.navbar__bars {
-    opacity: 0;
+.navbar-menu {
+    list-style: none;
+    text-align: center;
+    margin-right: 24px;
+    margin-top: 4px;
+}
+
+.navbar-menu #button {
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #00cc66;
+    margin-left: 16px;
+    color: #f7f7f7;
+}
+
+.navbar-menu #button:hover {
+    background: #fb4b4e;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .navbar-menu-links {
@@ -65,20 +88,4 @@ p {
     border: #00cc66 1px solid;
     border-radius: 2px 2px 0 0;
     background: #f7f7f7;
-}
-
-.navbar__menu #button {
-    padding: 12px 24px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #00cc66;
-    margin-left: 16px;
-    color: #f7f7f7;
-}
-
-.navbar__menu #button:hover {
-    background: #fb4b4e;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
