@@ -1,0 +1,33 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    width: 600px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ddd;
+    border: 1px solid #000;
+}
+
+.one {
+    background: #eee;
+    padding: 10px;
+    width: 300px;
+    float: left;
+    border: 1px solid #000;
+    border-radius: 4px;
+    /* box-sizing: border-box; */
+    /* for text */
+    text-align: center;
+    font-size: 2.5rem;
+}
