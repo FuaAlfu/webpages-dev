@@ -1,0 +1,43 @@
+:root {
+    --clr-mainColor: #232323;
+    --clr-blu: blue;
+    --cle-red: red;
+    --clr-gren: green;
+    --clr-gray: gray;
+    --clr-wt: white;
+    --clr-dk-g: #ddd;
+    --mainPadding: 20px;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main {
+    background: var(--clr-mainColor, #ddd);
+    color: var(--clr-wt);
+    padding: var(--mainPadding);
+}
+
+.local {
+    --clr-mainColor: blue;
+    background: var(--clr-mainColor);
+    color: white;
+    padding: 20px;
+}
+
+h2 {
+    color: var(--cle-red);
+    background: var(--clr-dk-g);
+    padding: calc(20px + var(--mainPadding));
+}
+
+p {
+    color: var(--cle-red);
+    background: var(--clr-dk-g);
+    padding: 20px;
+}
+
+a:hover {
+    color: var(--clr-gren);
+}
