@@ -1,10 +1,18 @@
 :root {
     --clr-main: #fff;
+    --clr-border: #ddd;
     --clr-one: #ffb4b4;
     --clr-two: #b34180;
     --clr-three: #822659;
     --clr-four: #232323;
     --clr-five: #5b5b5b;
+    --clr-six: #ffee93;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -42,8 +50,10 @@ p {
 }
 
 img {
-    height: 400px;
-    width: 400px;
+    height: 320px;
+    width: 320px;
+    border: 1px solid var(--clr-main);
+    border-radius: 4px;
     /* background: cover; */
 }
 
@@ -55,6 +65,8 @@ img {
 
 .border {
     display: inline-block;
+    padding: 20px;
+    margin-top: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
     height: 100vh;
@@ -74,11 +86,11 @@ img {
     list-style: none;
     text-align: center;
     margin-right: 24px;
-    margin-top: 4px;
 }
 
 .navbar-menu #button {
     padding: 12px 24px;
+    margin-top: 8px;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -118,9 +130,9 @@ img {
 
 .card {
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid var(--clr-border);
     border-radius: 4px;
-    height: 500px;
+    height: 450px;
     width: 400px;
     cursor: pointer;
 }
@@ -128,6 +140,23 @@ img {
 .img- {
     border: 1px solid var(--clr-four);
     border-radius: 4px;
+}
+
+.add {
+    padding: 4px;
+    margin-top: 8px;
+    border: 1px solid var(--clr-border);
+    border-radius: 4px;
+    background: var(--clr-four);
+}
+
+.color-a {
+    color: var(--clr-one);
+}
+
+.color-b {
+    color: var(--clr-six);
+    font-size: 1.5rem;
 }
 
 .date {
