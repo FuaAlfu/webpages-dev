@@ -1,0 +1,116 @@
+body {
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/GAME-BG.jpeg') top center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(252, 148, 191, 0.6);
+}
+
+@media(min-width:1024px) {
+    .body {
+        background-attachment: fixed;
+    }
+}
+
+@media(min-width:360px) {
+    .body {
+        background-attachment: fixed;
+    }
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+}
+
+#header h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 56px;
+    color: #fff;
+}
+
+#header h2 {
+    color: #eee;
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+#header .countdown {
+    margin-bottom: 80px;
+}
+
+#header .countdown div {
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    margin: 10px 10px;
+    width: 100px;
+    padding: 15px 0;
+}
+
+#header .countdown div h3 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+#header .countdown div h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+@media (max-width: 575px) {
+    #header .countdown div {
+        width: 70px;
+        padding: 10px 0;
+        margin: 10px 8px;
+    }
+    #header .countdown div h3 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    #header .countdown div h4 {
+        font-size: 14px;
+        font-weight: lighter;
+        color: #fff;
+    }
+}
+
+#header .social-links {
+    margin-top: 80px;
+}
+
+#header .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    padding-top: 14px;
+    margin: 0 3px;
+    border-radius: 50%;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    transition: 0.3s;
+    border: 1px solid #fff;
+}
+
+#header .social-links a:hover {
+    background: #f56a79;
+    border-color: #f56a79;
+}
