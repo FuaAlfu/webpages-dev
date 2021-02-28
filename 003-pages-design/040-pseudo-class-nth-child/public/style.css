@@ -1,0 +1,14 @@
+/*
+An * b
+3n+2 start at second line and after every three lines
+10n+8 every 10 line..so on.
+*/
+
+li:nth-child(10n+6) {
+    color: red;
+}
+
+li:nth-child(3n+3) {
+    /* will override red colors from some first li */
+    color: blue;
+}
