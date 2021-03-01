@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+html {
+    background-color: skyblue;
+}
+
+body {
+    font-family: 'DotGothic16', sans-serif;
+    height: 80%;
+    width: 80%;
+    border: 5px dashed red;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: hotpink;
+}
+
+
+/*
+when you have conflicting rule-set, the one with the highest
+specificity wins...
+*/
+
+#emph {
+    color: red;
+}
+
+.emphasize {
+    color: gold;
+}
+
+.bedouins {
+    color: blue;
+}
