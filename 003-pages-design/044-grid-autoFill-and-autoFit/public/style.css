@@ -1,0 +1,71 @@
+:root {
+    --clr-main: #fff;
+    --clr-lightPink: #f1d1d0;
+    --clr-midPink: #fbaccc;
+    --clr-pink: #f875aa;
+    --clr-strongPink: #ff5e78;
+    --clr-background: #f9f871;
+    --clr-num: #845ec2;
+}
+
+body {
+    background: var(--clr-background);
+    /* margin: 3em; */
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--clr-strongPink)
+}
+
+p {
+    padding: 50px 8px;
+    margin: 20px 4px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--clr-num);
+}
+
+.auto-fill {
+    border: 1px solid var(--clr-main);
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: 100px 100px;
+}
+
+.auto-fit {
+    border: 1px solid var(--clr-main);
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 100px 100px;
+}
+
+.box {
+    padding: 4px;
+    margin: 8px;
+    height: 150px;
+    width: 150px;
+    border-radius: 4px;
+    /* grid-column: 1 / -1; */
+}
+
+.one {
+    background: var(--clr-lightPink);
+}
+
+.two {
+    background: var(--clr-midPink);
+}
+
+.three {
+    background: var(--clr-pink);
+}
+
+.four {
+    background: var(--clr-strongPink);
+}
