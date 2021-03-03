@@ -1,0 +1,44 @@
+html {
+    background: rgba(99, 130, 89, 0.6);
+}
+
+Body {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    border: dot-dash indianred 1rem;
+    border-radius: 5px;
+}
+
+div {
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 28px;
+    background-color: orange;
+    display: inline-block;
+}
+
+.class1 {
+    background-color: red;
+}
+
+.class2 {
+    background-color: green;
+}
+
+.class3 {
+    background-color: indianred;
+}
+
+.class4 {
+    background-color: rebeccapurple;
+}
+
+div:hover {
+    width: 230px;
+    height: 120px;
+    border: 1px solid red;
+    border-radius: 28px;
+    display: inline-block;
+}
