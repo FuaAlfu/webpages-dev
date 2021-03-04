@@ -1,0 +1,56 @@
+:root {
+    --ff-primary: basic-sans, sans-serif;
+    --clr-primary: #ee6352;
+    --clr-body: #333;
+    --clr-bg: #ddd;
+    --spacer: 1rem;
+}
+
+body {
+    background: var(--clr-body);
+}
+
+header h1,
+header a {
+    font-family: serif;
+    text-align: center;
+}
+
+header :is(h1, a) {
+    color: limegreen;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--clr-body);
+}
+
+.one {
+    background: var(--clr-bg);
+    height: 40vh;
+    width: 400px;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 250px;
+}
+
+.two {
+    background: var(--clr-bg);
+    height: 40vh;
+    width: 400px;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 250px;
+}
+
+:is(.one, .two) p:hover {
+    color: var(--clr-primary);
+    cursor: pointer;
+}

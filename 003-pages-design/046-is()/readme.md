@@ -1,0 +1,5 @@
+## :is()
+all about [is](https://developer.mozilla.org/en-US/docs/Web/CSS/:is)
+
+---
+---
