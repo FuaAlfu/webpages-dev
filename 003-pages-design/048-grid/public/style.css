@@ -1,0 +1,43 @@
+/* 
+ -display: grid | inline-grid
+ -grid-template-columns => [numbers of columns in] => [px,%,auto,fr[fraction],repeat(),mix]
+
+ ---
+ grid-template-columns: auto auto auto auto auto;
+ or
+ grid-template-columns: repeat(5,auto); 
+ */
+* {
+    box-sizing: border-box;
+    /* box-shadow: inset; */
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background: #eee;
+    display:grid;
+    /* number of  */
+    grid-template-columns: repeat(2,auto) repeat(2,1fr) repeat(2,50px); 
+}
+
+.parent div {
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.date {
+    color: #233233;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.d {
+    font-size: 1.5rem;
+    color: #233233;
+}
