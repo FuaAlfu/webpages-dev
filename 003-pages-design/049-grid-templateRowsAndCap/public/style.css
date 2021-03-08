@@ -1,0 +1,57 @@
+/* 
+  <= columns dancing with width,
+  <= row dancing with height
+---------------------------------------
+ -display: grid | inline-grid
+ -grid-template-columns => [count of columns by] => [px,%,auto,fr[fraction],repeat(),mix]
+ grid-template-columns: auto auto auto auto auto;
+ or
+ grid-template-columns: repeat(5,auto); 
+ --------------------------------------
+ -grid-template-rows => [count of rows height by] => [px,%,auto,fr,repeat,mix]
+ -gap => [short hand of gap-column & gap-row]
+ */
+
+* {
+    box-sizing: border-box;
+    /* box-shadow: inset; */
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background: #eee;
+    display: grid;
+    /* number of  */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* row-gap: 20px;
+    column-gap: 20px; */
+    gap: 10px 10px;
+    box-shadow: 0 0 10px 0 #ddd, 0 0 10px 0 #f10000, 0 0 10px 0 #000, 0 0 10px 0 #080, 0 0 10px 0 #00f, 0 0 10px 0 yellow;
+}
+
+.parent div {
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.parent div:hover {
+    background-color: #00f;
+}
+
+.date {
+    color: #233233;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.d {
+    font-size: 1.5rem;
+    color: #233233;
+}
