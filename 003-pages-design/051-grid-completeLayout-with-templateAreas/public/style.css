@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px auto 90px;
+    /* . means: there is no column. :: "" => contains one area */
+    /* grid-template-areas: "logo logo . nav nav nav nav nav nav nav nav"; */
+    grid-template-areas: "logo logo logo nav nav nav nav nav nav nav" "cont cont cont cont cont cont cont side side side" "foot foot foot foot foot foot foot foot foot foot";
+    height: 100vh;
+    background-color: #233233;
+    color: #fff;
+}
+
+h2 {
+    grid-area: logo;
+    background-color: #335355;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #335355;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+section {
+    grid-area: cont;
+    color: #fff;
+}
+
+aside {
+    grid-area: side;
+    background-color: #2c3f41;
+    color: #fff;
+}
+
+footer {
+    grid-area: foot;
+    background-color: #2e4647;
+    color: #fff;
+}
+
+.date {
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.d {
+    font-size: 1.5rem;
+    color: #fff;
+}
