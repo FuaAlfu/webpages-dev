@@ -1,0 +1,98 @@
+/* 
+  <= columns dancing with width,
+  <= row dancing with height
+---------------------------------------
+ -display: grid | inline-grid
+ -grid-template-columns => [count of columns by] => [px,%,auto,fr[fraction],repeat(),mix]
+ grid-template-columns: auto auto auto auto auto;
+ or
+ grid-template-columns: repeat(5,auto); 
+ --------------------------------------
+ -grid-template-rows => [count of rows height by] => [px,%,auto,fr,repeat,mix]
+ -gap => [short hand of gap-column & gap-row]
+ --------------------------------------
+ grid child 
+ grid column: shorthand of grid-column-start and grid-column-end
+ grid row: the same )
+ grid-column: span 4 or 1 / 4
+ --------------------------------------
+ */
+
+* {
+    box-sizing: border-box;
+    /* box-shadow: inset; */
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background: #eee;
+    display: grid;
+    /* number of  */
+    /* grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(3, auto); */
+    grid-template-areas: "col col col bol  bol" "cont cont cont cont jol";
+    /* grid-template-areas: "col col col col col bol"; */
+    /* ----- */
+    /* row-gap: 20px;
+    column-gap: 20px; */
+    gap: 10px 10px;
+    justify-content: space-around;
+    align-content: space-around;
+    box-shadow: 0 0 10px 0 #ddd, 0 0 10px 0 #f10000, 0 0 10px 0 #000, 0 0 10px 0 #080, 0 0 10px 0 #00f, 0 0 10px 0 yellow;
+}
+
+.parent div {
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#grid-1 {
+    /* grid-column: span 4; */
+    /* grid-column: 1 / 4; */
+    /* ------------------------------------ */
+    background-color: green;
+    /* current layout */
+    /* grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 6; */
+    /* or use*/
+    /* grid-area: 2 / 2 / 4 / 6; */
+    /* another */
+    grid-area: col;
+}
+
+#grid-2 {
+    /* grid-row: inherit; */
+    /* grid-row: 2/4; */
+    background-color: rosybrown;
+    grid-area: cont;
+}
+
+#grid-3 {
+    /* grid-column: span 5; */
+    background-color: aquamarine;
+    /* grid-area: 2 / 2 / 4 / 6; */
+    /* grid-area: bol; */
+}
+
+:is(#grid-3, #grid-2, #grid-1, .parent div):hover {
+    background-color: #00f;
+}
+
+.date {
+    color: #233233;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.d {
+    font-size: 1.5rem;
+    color: #233233;
+}
