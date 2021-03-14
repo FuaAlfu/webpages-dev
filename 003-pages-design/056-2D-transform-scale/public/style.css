@@ -6,8 +6,8 @@
 */
 
 .box>div {
-    width: 90%;
-    height: 90%;
+    width: 30%;
+    height: 30%;
     background-color: rgb(255 0 0 / 39%);
     color: #fff;
     display: flex;
@@ -15,9 +15,9 @@
     align-items: center;
     font-weight: bold;
     font-size: 30px;
-    margin-top: 5%;
-    margin-left: 5%;
-    transition: .5s;
+    margin-top: 15%;
+    margin-left: 30%;
+    transition: 5s;
     box-shadow: 0 0 10px 0 #ddd, 0 0 10px 0 #f10000, 0 0 10px 0 #000, 0 0 10px 0 #080, 0 0 10px 0 #00f, 0 0 10px 0 yellow;
 }
 
@@ -25,12 +25,17 @@
     /* transform: scaleX(1.5); */
     /* transform: scaleY(1.5); */
     /* or */
-    transform: scale(1.1, 2);
+    transform: scale(1.1, 5);
+}
+
+.inner-box:hover {
+    transform: scale(-1, -5);
+    transition: .3s;
 }
 
 .date {
     color: #233233;
-    margin-top: 20px;
+    margin-top: 400px;
     text-align: center;
 }
 
