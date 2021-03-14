@@ -1,0 +1,40 @@
+/* 
+- 2D Transform
+- scale
+- scaleX
+- scaleY
+*/
+
+.box>div {
+    width: 90%;
+    height: 90%;
+    background-color: rgb(255 0 0 / 39%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 5%;
+    transition: .5s;
+    box-shadow: 0 0 10px 0 #ddd, 0 0 10px 0 #f10000, 0 0 10px 0 #000, 0 0 10px 0 #080, 0 0 10px 0 #00f, 0 0 10px 0 yellow;
+}
+
+.inner-box {
+    /* transform: scaleX(1.5); */
+    /* transform: scaleY(1.5); */
+    /* or */
+    transform: scale(1.1, 2);
+}
+
+.date {
+    color: #233233;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.d {
+    font-size: 1.5rem;
+    color: #233233;
+}
