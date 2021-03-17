@@ -1,0 +1,42 @@
+/* 
+Transform
+- translate
+-perpective
+-perpective - origin
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box>div {
+    width: 30%;
+    height: 30%;
+    background-color: rgb(255 0 0 / 39%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 15%;
+    margin-left: 30%;
+    box-shadow: 0 0 10px 0 #ddd, 0 0 10px 0 #f10000, 0 0 10px 0 #000, 0 0 10px 0 #080, 0 0 10px 0 #00f, 0 0 10px 0 yellow;
+    /* here */
+    perspective: 300px;
+    /* defualt */
+    /* perspective-origin: center center; */
+    perspective-origin: left top;
+}
+
+.inner-box {
+    /* transform: translate(100px, -100px);*/
+    /* transform: translateZ(); */
+    /* transform-origin: ; */
+    /* x,y,z */
+    transform: translate3D(0, 0, 200px);
+}
