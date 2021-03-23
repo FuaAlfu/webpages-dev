@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    .logo {
+        font-size: 12px;
+    }
+    .tagline {
+        font-size: 14px;
+    }
+    .menu {
+        ul {
+            display: flex;
+            li {
+                font-size: 1rem;
+                border-right: 1px solid #ddd;
+                list-style: none;
+                padding: 0 10px;
+            }
+        }
+    }
+}
