@@ -17,8 +17,9 @@ body {
 div {
     width: 100px;
     height: 100px;
-    border: 1px solid #000;
+    border: 5px solid #000;
     border-radius: 50%;
+    border-left-color: transparent;
     background-color: antiquewhite;
     position: absolute;
     left: 50%;
@@ -32,22 +33,23 @@ div {
     align-items: center;
     color: white; */
     /* transform: translate(-50%, -50%); */
-    animation-name: change-color;
-    animation-duration: 6s;
-    transition: transform .3s;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* transition: transform .3s; */
 }
 
-@keyframes change-color {
+.circle {
+    /* 360deg */
+    transform: rotate(1turn);
+}
+
+@keyframes spin {
     0% {
-        background-color: antiquewhite;
-    }
-    5% {
-        background-color: aliceblue;
-    }
-    10% {
-        background-color: aqua;
+        transform: rotate(0deg);
     }
     100% {
-        background-color: bisque;
+        transform: rotate(360deg);
     }
 }
