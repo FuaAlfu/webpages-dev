@@ -23,17 +23,8 @@ div {
     align-items: center;
     color: white; */
     /* transform: translate(-50%, -50%); */
-    animation-name: coloring;
-    animation-duration: 5s;
-    /* animation-iteration-count: infinite; */
-    /* animation-timing-function: linear; */
-    /* direction */
-    /* animation-direction: reverse; */
-    /* use negative value to delay the anim */
-    /* animation-delay: -2s; */
-    /* animation-fill-mode: forwards; */
-    /* animation-fill-mode: both; */
-    animation-play-state: running;
+    /* shorthand anim */
+    animation: coloring 3s linear 2s infinite alternate;
 }
 
 div:hover {

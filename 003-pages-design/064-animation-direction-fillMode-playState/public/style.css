@@ -41,11 +41,12 @@ div {
     /* direction */
     /* animation-direction: reverse; */
     animation-direction: alternate;
+    animation-play-state: running;
 }
 
-.circle {
-    /* 360deg */
-    transform: rotate(1turn);
+div:hover {
+    cursor: pointer;
+    animation-play-state: paused;
 }
 
 @keyframes spin {
