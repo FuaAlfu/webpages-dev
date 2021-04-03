@@ -150,6 +150,41 @@ body {
     line-height: 1.8;
 }
 
+
+/* end of landing */
+
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.features .feet {
+    padding: 20px;
+    text-align: center;
+}
+
+.features .feet i {
+    color: var(--clr-main-colour);
+}
+
+.features .feet h3 {
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.features .feet p {
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+}
+
 @media (min-width: 768px) {
     .container {
         width: 750px;
