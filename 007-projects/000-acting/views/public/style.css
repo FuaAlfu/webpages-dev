@@ -23,6 +23,40 @@ body {
     margin-right: auto;
 }
 
+
+/* End of container */
+
+.special-heading {
+    color: #ebeced;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -4px;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .special-heading {
+        font-size: 60px;
+    }
+    .special-heading+p {
+        margin: -20px;
+    }
+}
+
+
+/* + means next selector */
+
+.special-heading+p {
+    margin: -30px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+
+
+/* End of Components */
+
 .header {
     padding: 20px;
 }
@@ -183,6 +217,14 @@ body {
     line-height: 1.8;
     color: #777;
     font-size: 17px;
+}
+
+
+/* End of features */
+
+.services {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 @media (min-width: 768px) {
