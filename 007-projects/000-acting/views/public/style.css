@@ -1,5 +1,6 @@
 :root {
     --clr-main-colour: #10cab7;
+    --clr-secondary-color: #2c4755;
 }
 
 * {
@@ -225,6 +226,70 @@ body {
 .services {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.services .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.services .services-content .srv {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.services .services-content .srv i {
+    color: var(--clr-main-colour);
+    flex-basis: 60px;
+}
+
+.services .services-content .srv .txt {
+    flex: 1;
+}
+
+.services .services-content .srv .txt h3 {
+    margin: 0 0 20px;
+}
+
+.services .services-content .srv .txt p {
+    color: #444;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.services .services-content .srv .image {
+    text-align: center;
+    position: relative;
+}
+
+.services .services-content .image::before {
+    content: "";
+    background-color: var(--clr-secondary-color);
+    width: 100px;
+    height: calc(100% + 100px);
+    top: -50px;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.services .services-content .image img {
+    width: 260px;
+}
+
+@media (max-width: 1199px) {
+    .image-col {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .services .services-content .srv {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) {
