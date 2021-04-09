@@ -1,6 +1,8 @@
 :root {
     --clr-main-colour: #10cab7;
     --clr-secondary-color: #2c4755;
+    --clr-section-background: #f6f6f6;
+    --section-padding: 60px;
 }
 
 * {
@@ -189,9 +191,9 @@ body {
 /* end of landing */
 
 .features {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #f6f6f6;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--clr-section-background);
 }
 
 .features .container {
@@ -224,8 +226,8 @@ body {
 /* End of features */
 
 .services {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 
 .services .services-content {
@@ -277,6 +279,50 @@ body {
 
 .services .services-content .image img {
     width: 260px;
+}
+
+.protfolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--clr-section-background);
+}
+
+.protfolio .protfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.protfolio .protfolio-content .card {
+    background-color: #fff;
+}
+
+.protfolio .protfolio-content .card img {
+    max-width: 100%;
+}
+
+.protfolio .protfolio-content .card .info {
+    padding: 20px;
+}
+
+.protfolio .protfolio-content .card .info h3 {
+    margin: 0;
+}
+
+.protfolio .protfolio-content .card .info p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .protfolio .protfolio-content .card .info h3 {
+        text-align: center;
+    }
+    .protfolio .protfolio-content .card .info p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 1199px) {
