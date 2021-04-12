@@ -316,6 +316,51 @@ body {
     margin-bottom: 0;
 }
 
+.about {
+    padding-top: var(--section-padding);
+    padding-bottom: calc(var(--section-padding) + 60px);
+}
+
+.about .about-content {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about .about-content .image {
+    position: relative;
+    width: 250px;
+    height: 375px;
+}
+
+.about .about-content .image::before {
+    content: "";
+    position: absolute;
+    background-color: #ebeced;
+    width: 100px;
+    height: calc(100% + 80px);
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+}
+
+.about .about-content .image::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 300px;
+    border-left: 80px solid var(--clr-main-colour);
+    border-bottom: 80px solid var(--clr-main-colour);
+    z-index: -1;
+    right: -150px;
+    top: -40px;
+}
+
+.about .about-content .image img {
+    max-width: 100%;
+}
+
 @media (max-width: 767px) {
     .protfolio .protfolio-content .card .info h3 {
         text-align: center;
