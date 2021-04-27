@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    text-shadow: 4px 2px #eee;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    background-color: #eee;
+    border: 1px #000 dotted;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    margin-top: 30px;
+    height: 100px;
+    width: 200;
+    border: 1px solid #000;
+    border-radius: 0 5px 0 0;
+    background: blanchedalmond;
+    position: relative;
+}
+
+.card::before {
+    width: 14px;
+    height: 100%;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.card::after {
+    height: 14px;
+    width: 100%;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.box:before,
+.box:after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+}
