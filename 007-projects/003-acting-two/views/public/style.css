@@ -1,3 +1,7 @@
+:root {
+    --clr-main-color: #19c8fa;
+}
+
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -73,4 +77,46 @@ header .logo img {
 
 header nav {
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    display: block;
+    color: wheat;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 40px 10px;
+    position: relative;
+    z-index: 2;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: var(--clr-main-color);
+    border-bottom: 1px solid var(--clr-main-color);
+}
+
+header nav .form {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 40px;
+    border-left: 1px solid #fff;
+}
+
+header nav .form i {
+    color: wheat;
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    /* z-index: -1; */
 }
