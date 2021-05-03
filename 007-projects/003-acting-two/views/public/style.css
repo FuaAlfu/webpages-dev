@@ -1,5 +1,6 @@
 :root {
     --clr-main-color: #19c8fa;
+    --transparent-clr: rgb(15 116 143 / 70%);
 }
 
 * {
@@ -158,3 +159,51 @@ header nav .form i {
 
 
 /* End of header */
+
+.landing {
+    min-height: 100vh;
+    background-color: #1f2021;
+    background-image: url('../images/landing.jpg');
+    background-size: cover;
+}
+
+.landing .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+}
+
+.landing .txt {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 50px;
+    background-color: var(--transparent-clr);
+    color: wheat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.landing .txt .content {
+    max-width: 500px;
+}
+
+.landing .txt .content h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.landing .txt .content p {
+    font-size: 14px;
+    line-height: 2;
+}
+
+
+/* end of landing */
