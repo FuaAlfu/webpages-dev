@@ -1,0 +1,20 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #000;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.container {
+    text-align: center;
+    color: bisque;
+}
+
+.r {
+    margin-bottom: 30px;
+    color: beige;
+    font-size: 2rem;
+}
