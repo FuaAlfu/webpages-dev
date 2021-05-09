@@ -388,6 +388,12 @@ header nav .form i {
     text-align: center;
 }
 
+@media (max-width: 767px) {
+    .design .image {
+        display: none;
+    }
+}
+
 .design .image img {
     position: relative;
     bottom: -150px;
@@ -397,6 +403,25 @@ header nav .form i {
     color: wheat;
     padding: 50px;
     background-color: var(--transparent-clr);
+}
+
+.design .txt h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.design .txt ul li {
+    padding: 15px 0;
+}
+
+.design .txt ul li::before {
+    content: "\f108";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
 }
 
 
